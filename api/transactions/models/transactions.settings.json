@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transactions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "decimal"
+    },
+    "transaction_date": {
+      "type": "date"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "currency_id": {
+      "model": "currencies"
+    },
+    "category_id": {
+      "model": "categories"
+    },
+    "type_id": {
+      "model": "types"
+    }
+  }
+}
